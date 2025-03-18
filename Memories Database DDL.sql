@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `memories`.`user` (
   `user_id` VARCHAR(20) NOT NULL COMMENT '사용자 아이디',
   `user_password` VARCHAR(255) COLLATE 'utf8mb3_bin' NOT NULL COMMENT '사용자 비밀번호',
   `join_type` VARCHAR(6) COLLATE 'utf8mb3_bin' NOT NULL COMMENT '회원가입 경로 (NORMAL,KAKAO,NAVER)',
-  `sns-id` VARCHAR(100) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL COMMENT 'OAuth 인증 후 인증 서버로부터 발급 받은 사용자의 아이디',
+  `sns_id` VARCHAR(100) COLLATE 'utf8mb3_bin' NULL DEFAULT NULL COMMENT 'OAuth 인증 후 인증 서버로부터 발급 받은 사용자의 아이디',
   `name` VARCHAR(15) COLLATE 'utf8mb3_bin' NOT NULL COMMENT '사용자 이름',
   `address` TEXT COLLATE 'utf8mb3_bin' NOT NULL COMMENT '사용자 주소',
   `detail_address` TEXT COLLATE 'utf8mb3_bin' NULL DEFAULT NULL COMMENT '사용자 상세 주소',
